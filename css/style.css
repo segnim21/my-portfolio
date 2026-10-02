@@ -116,7 +116,7 @@ header img {
   background-color: #f9fafb;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: -4px 4px 0px rgb(165, 165, 223);
 }
 
 #skills ul {
@@ -151,4 +151,17 @@ header img {
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/*Education section*/
+
+#education article {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: -4px 4px 0px rgb(165, 165, 223);
+  margin-bottom: 20px;
+}
+#education article h3 {
+  margin-bottom: 10px;
 }
