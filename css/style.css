@@ -22,6 +22,9 @@ body {
   padding: 0 20px;
 }
 
+section {
+  padding: 60px 0;
+}
 /*header style*/
 
 header {
@@ -57,4 +60,19 @@ header img {
   align-items: center;
   gap: 40px;
   padding: 40px 20px;
+}
+
+.hero-photo p {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+.hero-photo span {
+  display: block;
+  font-weight: normal;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+.hero-location p {
+  font-weight: normal;
+  color: var(--color-muted);
 }
