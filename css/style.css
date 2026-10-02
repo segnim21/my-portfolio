@@ -72,7 +72,8 @@ header img {
   color: var(--color-muted);
   font-size: 0.9rem;
 }
-.hero-location p {
+.hero-location span {
   font-weight: normal;
   color: var(--color-muted);
+  font-size: 0.9rem;
 }
