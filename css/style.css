@@ -1,3 +1,17 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --color-primary: #2563eb;
+  --color-text: #1f2937;
+  --color-background: #ffffff;
+  --color-muted: #6b7280;
+  --font-main: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
