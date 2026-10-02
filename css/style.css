@@ -16,6 +16,12 @@ body {
   background-color: var(--color-background);
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /*header style*/
 
 header {
@@ -43,4 +49,12 @@ header img {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
 }
