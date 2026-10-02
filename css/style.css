@@ -40,7 +40,13 @@ nav ul {
   gap: 20px;
   list-style: none;
 }
-
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+a:hover {
+  color: #adbdea;
+}
 header img {
   width: 40px;
   height: 40px;
@@ -48,6 +54,24 @@ header img {
   object-fit: cover;
 }
 
+.hero-text div a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.hero-text div a:first-child {
+  background-color: var(--color-primary);
+  color: white;
+}
+.hero-text div a:last-child {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
 #hero img {
   width: 200px;
   height: 200px;
