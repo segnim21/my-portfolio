@@ -226,4 +226,15 @@ footer {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
