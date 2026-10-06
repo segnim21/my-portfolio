@@ -107,7 +107,7 @@ header img {
 
 /*Skills section*/
 
-.skills-grid {
+#skills .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -209,11 +209,21 @@ footer {
 .footer-bottom .footer-email {
   margin-bottom: 10px;
 }
+
 /*Responsive Design*/
 
 @media (max-width: 768px) {
   #hero {
     flex-direction: column;
+    text-align: center;
+  }
+
+  #skills .skills-grid,
+  #projects .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 }
