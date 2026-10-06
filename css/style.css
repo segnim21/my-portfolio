@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -163,5 +165,47 @@ header img {
   margin-bottom: 20px;
 }
 #education article h3 {
+  margin-bottom: 10px;
+}
+
+/*footer*/
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+}
+.footer-col a {
+  color: var(--color-secondary);
+}
+.footer-col a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.footer-bottom .footer-email {
   margin-bottom: 10px;
 }
