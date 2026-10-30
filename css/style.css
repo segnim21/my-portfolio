@@ -1415,3 +1415,11 @@ footer {
     position: static;
   }
 }
+
+@media (max-width: 480px) {
+  #contact .contact-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
