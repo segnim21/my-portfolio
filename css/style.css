@@ -381,6 +381,11 @@ section {
   .location-icon {
     animation: none;
   }
+
+  .hero-role span:first-child {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
 /*About me section*/
