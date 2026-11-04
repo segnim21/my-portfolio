@@ -19,6 +19,12 @@ body {
   background-color: var(--color-background);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
