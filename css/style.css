@@ -1089,38 +1089,6 @@ footer {
 
 /*small phones responsive design for header */
 
-@media (max-width: 400px) {
-  .header-inner {
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    padding: 14px 12px;
-  }
-
-  .site-header .brand {
-    justify-content: center;
-  }
-
-  .site-nav {
-    width: 100%;
-  }
-
-  .site-nav ul {
-    justify-content: center;
-    gap: 4px;
-  }
-
-  .site-nav a {
-    padding: 8px;
-    font-size: 0.85rem;
-  }
-
-  .site-nav .nav-contact {
-    margin-left: 0;
-    padding: 8px 12px;
-  }
-}
-
 @media (max-width: 768px) {
   #hero {
     min-height: auto;
@@ -1410,16 +1378,65 @@ footer {
 
 /*====== Header should not stay stuck on small phones =======*/
 
-@media (max-width: 600px) {
-  .site-header {
-    position: static;
-  }
-}
-
 @media (max-width: 480px) {
   #contact .contact-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+}
+
+/*Hamburger button: Hidden on desktop*/
+
+.nav-toggle {
+  display: none;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+.nav-toggle-bar + .nav-toggle-bar {
+  margin-top: 5px;
+}
+
+.nav-toggle:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/*Phone layout: collapsed menu*/
+
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+  }
+
+  .site-nav.is-open {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .site-nav .nav-contact {
+    margin-left: 0;
+    justify-content: center;
   }
 }
