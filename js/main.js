@@ -15,3 +15,10 @@ navToggle.addEventListener("click", function () {
 navLinks.forEach(function (link) {
   link.addEventListener("click", closeMenu);
 });
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+    closeMenu();
+    navToggle.focus();
+  }
+});
