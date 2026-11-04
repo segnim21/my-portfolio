@@ -1059,9 +1059,11 @@ footer {
 }
 .footer-col a {
   color: var(--color-secondary);
+  text-decoration: none;
 }
 .footer-col a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 .footer-bottom {
